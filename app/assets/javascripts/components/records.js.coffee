@@ -5,11 +5,6 @@
   getDefaultProps: ->
     records: []
 
-  addRecord: (record) ->
-    records = @state.records.slice()
-    records.push record
-    @setState records: records
-
   credits: ->
     credits = @state.records.filter (val) -> val.amount >= 0
     credits.reduce ((prev, curr) ->
@@ -24,6 +19,11 @@
 
   balance: ->
     @debits() + @credits()
+
+  addRecord: (record) ->
+    records = @state.records.slice()
+    records.push record
+    @setState records: records
 
   render: ->
     React.DOM.div

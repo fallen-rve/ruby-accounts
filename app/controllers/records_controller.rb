@@ -1,4 +1,3 @@
-# app/controllers/records_controller.rb
 class RecordsController < ApplicationController
   def index
     @records = Record.all
@@ -16,7 +15,7 @@ class RecordsController < ApplicationController
 
   private
 
-    def record_params
-      params.require(:record).permit(:title, :amount, :date)
-    end
+  def record_params
+    params.require(:record).permit(:title, :amount, :date)
+  end
 end
