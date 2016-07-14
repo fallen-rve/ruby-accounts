@@ -24,8 +24,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # bundle ReactJS
 gem 'react-rails', '~> 1.0'
-
+# bundle Bootstrap
 gem 'bootstrap-sass', '~> 3.3.6'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
